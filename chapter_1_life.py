@@ -14,14 +14,14 @@ player = pickle.load(open('player_stats.pkl', 'rb'))
 
 print()
 print("[*STORY*]")
-print("You holster your laser knife and exit your quarters. The door slides and locks behind you. You are in a well-lit")
-print("white hallway, and as you walk towards the life support systems, you pass a window peering out at the cosmos. Pluto")
-print("looms large below you. You continue walking towards life support, which in this ship also doubles as an infirmary")
-print("and biological research station. The ship's designers apparently figured that anything vaguely life-related should")
-print("be put in the same room. The door opens automatically as you approach and you enter a room full of fridge-sized")
-print("machines, along with a small cramped desk with nothing but a microscope. Several large drums filled with water at")
-print("various stages of purification are stuffed into the corner, next to freezers with medical supplies and a row of")
-print("cabinets. A carbon scrubber hums quietly as it filters the air. VERONICA is nowhere to be found.")
+print("You holster your laser knife and exit your quarters. The door slides and locks behind you. You are in a well-")
+print("lit white hallway, and as you walk towards the life support systems, you pass a window peering out at the cosmos.")
+print("Pluto looms large below you. You continue walking towards life support, which in this ship also doubles as an")
+print("infirmary and biological research station. The ship's designers apparently figured that anything vaguely life-")
+print("related should be put in the same room. The door opens automatically as you approach and you enter a room full of")
+print("fridge-sized machines, along with a small cramped desk with nothing but a microscope. Several large drums filled")
+print("with water at various stages of purification are stuffed into the corner, next to freezers with medical supplies")
+print("and a row of cabinets. A carbon scrubber hums quietly as it filters the air. VERONICA is nowhere to be found.")
 input()
 
 print(f"[{player['name']}]".upper())
@@ -98,8 +98,8 @@ if life_dec1.upper() == "A":
         if intimidate_outcome1 < [75]:          
             print()
             print("[SUCCESS]")
-            print("VERONICA shuffles her feet uncomfortably. Her brow is furrowed in concentration and she's not meeting")
-            print("your gaze.")
+            print("VERONICA shuffles her feet uncomfortably. Her brow is furrowed in concentration and she's not meeting your")
+            print("gaze.")
             input()
             print("[VERONICA]")
             print("Commander... yes, I have to admit. This morning, I was reading about how the brain works. It is admittedly")
@@ -118,14 +118,14 @@ if life_dec1.upper() == "A":
             if life_dec1_2.upper() == "A":             
                 print()
                 print("[*STORY*]")
-                print("VERONICA shifts her feet again. One of the freezers in the room begins making a high-pitched sound and")
-                print("you both wince. You doubt the noise would have affected you if you hadn't awoken with that headache.")
+                print("VERONICA shifts her feet again. One of the freezers in the room begins making a high-pitched sound and you")
+                print("both wince. You doubt the noise would have affected you if you hadn't awoken with that headache.")
                 input()
                 print("[VERONICA]")
-                print("I was trying to find articles about how the brain forms memories. Our ExNet connection to Earth seems")
-                print("not to be working, so I was hoping to find something in what little research we have that's physically")
-                print("printed. But no luck. To be honest, I awoke with such a headache this morning that I might need to take")
-                print("a break. But I won't let it affect my work, Commander.")
+                print("I was trying to find articles about how the brain forms memories. Our ExNet connection to Earth seems not")
+                print("to be working, so I was hoping to find something in what little research we have that's physically printed.")
+                print("But no luck. To be honest, I awoke with such a headache this morning that I might need to take a break. But")
+                print("I won't let it affect my work, Commander.")
                 input()
                   
                 # End chapter
@@ -157,9 +157,9 @@ if life_dec1.upper() == "A":
                 print("You mean you're telling me you're not sure whether you're a researcher or not?")
                 input()
                 print("[VERONICA]")
-                print("That seems like an outrageous question, Commander, but to be honest... now that I think about it,")
-                print("I can't for the life of me remember what my job title or responsibilities are.... I'm sorry, I")
-                print("understand this must sound crazy. But what is my purpose on this ship?")
+                print("That seems like an outrageous question, Commander, but to be honest... now that I think about it, I can't")
+                print("for the life of me remember what my job title or responsibilities are.... I'm sorry, I understand this")
+                print("must sound crazy. But what is my purpose on this ship?")
                 input()
                 
                 # Response
@@ -178,18 +178,17 @@ if life_dec1.upper() == "A":
                 if life_dec1_3.upper() == "A":
                     print()
                     print(f"[{player['name']}]".upper())
-                    print("You're an Endospace Radiobiologist studying the effects of long-term exposure to cosmic")
-                    print("radiation in space. And if you don't get back to work, you're going to be our first case")
-                    print("study on lethal doses.")
+                    print("You're an Endospace Radiobiologist studying the effects of long-term exposure to cosmic radiation in space.")
+                    print("And if you don't get back to work, you're going to be our first case study on lethal doses.")
                     input()
                     
                     # End chapter
                     print("[*STORY*]")
                     print("Either your imagination spoke the truth or VERONICA doesn't know the truth, either. She nods, wincing")
-                    print("slightly from the movement, and then heads to the microscope. You walk past her and out the door.")
-                    print("You're tempted to peek back in the room - is she doing anything in there? - but you decide to just")
-                    print("head back to your quarters. You can't help but notice how much VERONICA winced any time she moved")
-                    print("her head... and it makes your heart beat uncomfortably when you think about what she just asked.")
+                    print("slightly from the movement, and then heads to the microscope. You walk past her and out the door. You're")
+                    print("tempted to peek back in the room - is she doing anything in there? - but you decide to just head back to")
+                    print("your quarters. You can't help but notice how much VERONICA winced any time she moved her head... and it")
+                    print("makes your heart beat uncomfortably when you think about what she just asked.")
                     input()
                     
                     # Update storyline
@@ -203,8 +202,8 @@ if life_dec1.upper() == "A":
                 if life_dec1_3.upper() == "B":
                     print()
                     print("[*STORY*]")
-                    print("VERONICA raises her eyebrows. She doesn't say anything for a few moments. When she begins to speak,")
-                    print("you realize you might have made a mistake.")
+                    print("VERONICA raises her eyebrows. She doesn't say anything for a few moments. When she begins to speak, you")
+                    print("realize you might have made a mistake.")
                     input()
                     print("[VERONICA]")
                     print("I'm not sure what you mean by that comment, Commander. As my boss and the one in charge, I'd imagine that")
@@ -241,8 +240,8 @@ if life_dec1.upper() == "A":
             print("VERONICA raises her eyebrows and folds her arms.")
             input()
             print("[VERONICA]")
-            print("What do you mean by that, Commander? This is my office. I have a right to carry out my job just as")
-            print("BENJAMIN and you have to yours.")
+            print("What do you mean by that, Commander? This is my office. I have a right to carry out my job just as BENJAMIN")
+            print("and you have to yours.")
             input()
             
             # Response
@@ -266,8 +265,8 @@ if life_dec1.upper() == "A":
                 print("VERONICA smiles and enters the room. She walks past you and sits down at the desk.")
                 input()
                 print("[VERONCIA]")
-                print("I'm trying to understand mental health in space. Which is why you hired me... don't you remember?")
-                print("At any rate... Commander, I should get back to work. Thank you.")
+                print("I'm trying to understand mental health in space. Which is why you hired me... don't you remember? At any")
+                print("rate... Commander, I should get back to work. Thank you.")
                 input()
                 
                 # Update suspicion
@@ -277,12 +276,11 @@ if life_dec1.upper() == "A":
                 
                 # End chapter
                 print("[*STORY*]")
-                print("You don't like her tone of voice, but you don't feel like you have much bargaining power anymore,")
-                print("even as the commander of the ship. You would continue the conversation but the more you think about")
-                print("it, the less you're even sure what VERONICA's job is supposed to be. Whether that's indicative of")
-                print("an imposter or just how bad your memory has become, you're not sure. Maybe you should be the one")
-                print("reading up on memory.... You excuse yourself and begin the walk back to your quarters, lost in")
-                print("thought.")
+                print("You don't like her tone of voice, but you don't feel like you have much bargaining power anymore, even as")
+                print("the commander of the ship. You would continue the conversation but the more you think about it, the less")
+                print("you're even sure what VERONICA's job is supposed to be. Whether that's indicative of an imposter or just")
+                print("how bad your memory has become, you're not sure. Maybe you should be the one reading up on how the brain")
+                print("works.... You excuse yourself and begin the walk back to your quarters, lost in thought.")
                 input()
                                 
                 # Update storyline
@@ -304,8 +302,8 @@ if life_dec1.upper() == "A":
                     print("VERONICA smiles a bit. It seems like she knows you have no idea what you're talking about.")
                     input()
                     print("[VERONICA]")
-                    print("Commander, I think I need to get back to work. I have a lot to do. May I recommend you take")
-                    print("a nap? I think it would help your mental health.")
+                    print("Commander, I think I need to get back to work. I have a lot to do. May I recommend you take a nap? I think")
+                    print("it would help your mental health.")
                     input()
                     
                     # Update suspicion
@@ -315,11 +313,10 @@ if life_dec1.upper() == "A":
             
                     # End chapter
                     print("[*STORY*]")
-                    print("You feel like you should be the one issuing the snappy commands, but at this point you're not sure of")
-                    print("much anymore. You actually can't remember what VERONICA's job is supposed to be... or - your stomach")
-                    print("turns - what she even should look like. This isn't very promising for identifying an imposter.... You")
-                    print("start the long walk back to your quarters, vainly searching the empty cabinets of your memories for")
-                    print("clues.")
+                    print("You feel like you should be the one issuing the snappy commands, but at this point you're not sure of much")
+                    print("anymore. You actually can't remember what VERONICA's job is supposed to be... or - your stomach turns -")
+                    print("what she even should look like. This isn't very promising for identifying an imposter.... You start the")
+                    print("long walk back to your quarters, vainly searching the empty cabinets of your memories for clues.")
                     input()
                                     
                     # Update storyline
@@ -344,8 +341,8 @@ if life_dec1.upper() == "A":
                     
                     print("[VERONICA]")
                     print("I'm going to sound crazy, Commander, but now that I think about it, I can't for the life of me remember")
-                    print("what my job title or responsibilities are.... I'm sorry, I understand this must sound crazy. But what")
-                    print("is my purpose on this ship?")
+                    print("what my job title or responsibilities are.... I'm sorry, I understand this must sound crazy. But what is")
+                    print("my purpose on this ship?")
                     input()
                     
                     # Response
@@ -363,18 +360,17 @@ if life_dec1.upper() == "A":
                     if life_dec1_4.upper() == "A":
                         print()
                         print(f"[{player['name']}]".upper())
-                        print("You're an Endospace Radiobiologist studying the effects of long-term exposure to cosmic")
-                        print("radiation in space. And if you don't get back to work, you're going to be our first case")
-                        print("study on lethal doses.")
+                        print("You're an Endospace Radiobiologist studying the effects of long-term exposure to cosmic radiation in space.")
+                        print("And if you don't get back to work, you're going to be our first case study on lethal doses.")
                         input()
                         
                         # End chapter
                         print("[*STORY*]")
                         print("Either your imagination spoke the truth or VERONICA doesn't know the truth, either. She nods, wincing")
-                        print("slightly from the movement, and then heads to the microscope. You walk past her and out the door.")
-                        print("You're tempted to peek back in the room - is she doing anything in there? - but you decide to just")
-                        print("head back to your quarters. You can't help but notice how much VERONICA winced any time she moved")
-                        print("her head... and it makes your heart beat uncomfortably when you think about what she just asked.")
+                        print("slightly from the movement, and then heads to the microscope. You walk past her and out the door. You're")
+                        print("tempted to peek back in the room - is she doing anything in there? - but you decide to just head back to")
+                        print("your quarters. You can't help but notice how much VERONICA winced any time she moved her head... and it")
+                        print("makes your heart beat uncomfortably when you think about what she just asked.")
                         input()
                         
                         # Update storyline
@@ -397,28 +393,27 @@ if life_dec1.upper() == "A":
                             print("Yes. I've had one since this morning.")
                             input()
                             print("[*STORY*]")
-                            print("VERONICA's eyes widen. She walks to you and begins quickly sorting through the articles. After a")
-                            print("few moments, she pulls one out and skims it. She then lets out an exclamation and points to a")
-                            print("paragraph buried in the appendix. When she speaks, her voice is a whisper.")
+                            print("VERONICA's eyes widen. She walks to you and begins quickly sorting through the articles. After a few moments,")
+                            print("she pulls one out and skims it. She then lets out an exclamation and points to a paragraph buried in the")
+                            print("appendix. When she speaks, her voice is a whisper.")
                             input()
                             print("[VERONICA]")
-                            print("I think I might be onto something. We might be experiencing the effects of a nerve gas that causes")
-                            print("temporary amnesia. Its strongest side effect is persistent headaches.")
+                            print("I think I might be onto something. We might be experiencing the effects of a nerve gas that causes temporary")
+                            print("amnesia. Its strongest side effect is persistent headaches.")
                             input()
                             print("[VERONICA]")
-                            print("I think I know a way to reverse the effects of the toxin. But I'll have to move quickly. Something")
-                            print("tells me that if other members of the crew are experiencing amnesia, something serious is happening.")
-                            print("With your permission, Commander. I should start working on this.")
+                            print("I think I know a way to reverse the effects of the toxin. But I'll have to move quickly. Something tells me")
+                            print("that if other members of the crew are experiencing amnesia, something serious is happening. With your")
+                            print("permission, Commander. I should start working on this.")
                                                                             
                             # End chapter
                             print("[*STORY*]")
                             print("You dismiss VERONICA and she begins reading another article. You watch her for a few moments - you're")
-                            print("brimming with questions - but she's right. You leave her to her work and begin walking back to your")
-                            print("quarters. You're not sure why you told her in the heat of the moment about your headache, but it")
-                            print("seemed to have cracked through a facade VERONICA had been upholding. Would an imposter have actually")
-                            print("been surprised to hear that their nerve agent worked? Then again, whatever concoction VERONICA whips")
-                            print("up, you're going to have to trust that she's not trying to poison you. But hey, you've already been")
-                            print("poisoned once.")
+                            print("brimming with questions - but she's right. You leave her to her work and begin walking back to your quarters.")
+                            print("You're not sure why you told her in the heat of the moment about your headache, but it seemed to have cracked")
+                            print("through a facade VERONICA had been upholding. Would an imposter have actually been surprised to hear that")
+                            print("their nerve agent worked? Then again, whatever concoction VERONICA whips up, you're going to have to trust")
+                            print("that she's not trying to poison you. But hey, you've already been poisoned once, so what's another...")
                             input()
                             
                             # Update storyline
@@ -520,8 +515,8 @@ if life_dec1.upper() == "A":
                     print("VERONICA's smile falters. That didn't seem like a good idea.")
                     input()
                     print("[VERONICA]")
-                    print("Commander, I'm certainly not hiding things. I don't appreciate the accusation. If you'll excuse me, I'd")
-                    print("like to get back to work. Thank you.")
+                    print("Commander, I'm certainly not hiding things. I don't appreciate the accusation. If you'll excuse me, I'd like")
+                    print("to get back to work. Thank you.")
                     input()
                     
                     # Update suspicion
@@ -555,8 +550,7 @@ if life_dec1.upper() == "A":
                 if intimidate_outcome2 < [50]:
                     print()
                     print("[SUCCESS]")
-                    print("VERONICA is shocked. She stares at you, her mouth open. After what feels like a minute, she finally")
-                    print("speaks.")
+                    print("VERONICA is shocked. She stares at you, her mouth open. After what feels like a minute, she finally speaks.")
                     input()
                     print("[VERONICA]")
                     print("Did you just say you can't remember anything?")
@@ -565,28 +559,27 @@ if life_dec1.upper() == "A":
                     print("Yes.")
                     input()
                     print("[*STORY*]")
-                    print("VERONICA slowly shakes her head, her eyes wide. She walks to you and begins quickly sorting through")
-                    print("the articles. After a few moments, she pulls one out and skims it. She then lets out an exclamation")
-                    print("and points to a paragraph buried in the appendix. When she speaks, her voice is a whisper.")
+                    print("VERONICA slowly shakes her head, her eyes wide. She walks to you and begins quickly sorting through the")
+                    print("articles. After a few moments, she pulls one out and skims it. She then lets out an exclamation and points")
+                    print("to a paragraph buried in the appendix. When she speaks, her voice is a whisper.")
                     input()
                     print("[VERONICA]")
-                    print("I think I might be onto something. We might be experiencing the effects of a nerve gas that causes")
-                    print("temporary amnesia. Its strongest side effect is persistent headaches.")
+                    print("I think I might be onto something. We might be experiencing the effects of a nerve gas that causes temporary")
+                    print("amnesia. Its strongest side effect is persistent headaches.")
                     input()
                     print("[VERONICA]")
-                    print("I think I know a way to reverse the effects of the toxin. But I'll have to move quickly. Something")
-                    print("tells me that if other members of the crew are experiencing amnesia, something serious is happening.")
-                    print("With your permission, Commander. I should start working on this.")
+                    print("I think I know a way to reverse the effects of the toxin. But I'll have to move quickly. Something tells me")
+                    print("that if other members of the crew are experiencing amnesia, something serious is happening. With your")
+                    print("permission, Commander. I should start working on this.")
                                                                     
                     # End chapter
                     print("[*STORY*]")
                     print("You dismiss VERONICA and she begins reading another article. You watch her for a few moments - you're")
-                    print("brimming with questions - but she's right. You leave her to her work and begin walking back to your")
-                    print("quarters. You're not sure why you told her in the heat of the moment about your amnesia, but it")
-                    print("seemed to have cracked through a facade VERONICA had been upholding. Would an imposter have actually")
-                    print("been surprised to hear that their nerve agent worked? Then again, whatever concoction VERONICA whips")
-                    print("up, you're going to have to trust that she's not trying to poison you. But hey, you've already been")
-                    print("poisoned once.")
+                    print("brimming with questions - but she's right. You leave her to her work and begin walking back to your quarters.")
+                    print("You're not sure why you told her in the heat of the moment about your amnesia, but it seemed to have cracked")
+                    print("through a facade VERONICA had been upholding. Would an imposter have actually been surprised to hear that their")
+                    print("nerve agent worked? Then again, whatever concoction VERONICA whips up, you're going to have to trust that she's")
+                    print("not trying to poison you. But hey, you've already been poisoned once, so what's another...")
                     input()
                     
                     # Update storyline
@@ -617,9 +610,9 @@ if life_dec1.upper() == "A":
                     print("[*STORY*]")
                     print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your")
                     print("temper and revealing so much... what were you thinking? You can't remember... which just makes you even")
-                    print("angrier. You also can't tell if VERONICA was actually offended or was just trying to preemptively end")
-                    print("the conversation. You watch her for a few moments, trying to imagine what an imposter would act like,")
-                    print("but it's fruitless. You dismiss her and begin walking back to your quarters, lost in thought.")
+                    print("angrier. You also can't tell if VERONICA was actually offended or was just trying to preemptively end the")
+                    print("conversation. You watch her for a few moments, trying to imagine what an imposter would act like, but it's")
+                    print("fruitless. You dismiss her and begin walking back to your quarters, lost in thought.")
                     input()
                     
                     # Update storyline
@@ -658,12 +651,12 @@ if life_dec1.upper() == "A":
             if life_dec1_2.upper() == 'A':
                 print()
                 print("[*STORY*]")
-                print("Your comment makes VERONICA pause. She seems to be thinking for a lot longer than you'd expect her to for")
-                print("a seemingly simple question.")
+                print("Your comment makes VERONICA pause. She seems to be thinking for a lot longer than you'd expect her to for a")
+                print("seemingly simple question.")
                 input()
                 print("[VERONICA]")
-                print("It's interesting that you said that, Commander. I'm the crew biologist, aren't I? It'd be natural for me")
-                print("to be studying something biology-related, wouldn't it?")
+                print("It's interesting that you said that, Commander. I'm the crew biologist, aren't I? It'd be natural for me to")
+                print("be studying something biology-related, wouldn't it?")
                 input()
                 
                 # Response
@@ -722,8 +715,8 @@ if life_dec1.upper() == "A":
                     if intimidate_outcome2 < [50]:
                         print()
                         print("[SUCCESS]")
-                        print("VERONICA looks at you for a few moments in silence. Finally, she lets out a long sigh. She closes her")
-                        print("eyes and slowly rubs her forehead.")
+                        print("VERONICA looks at you for a few moments in silence. Finally, she lets out a long sigh. She closes her eyes")
+                        print("and slowly rubs her forehead.")
                         input()
                         print("[VERONICA]")
                         print("I'm sorry, Commander. You... did you say you can't remember my research?")
@@ -762,8 +755,8 @@ if life_dec1.upper() == "A":
                         print("VERONICA's smile falters. That didn't seem like a good idea.")
                         input()
                         print("[VERONICA]")
-                        print("Commander, nothing is going on besides me not being able to work. I don't appreciate the accusation. If you'll")
-                        print("excuse me, I'd like to get back to work. Thank you.")
+                        print("Commander, nothing is going on besides me not being able to work. I don't appreciate the accusation. If")
+                        print("you'll excuse me, I'd like to get back to work. Thank you.")
                         input()
                         
                         # Update suspicion
@@ -773,10 +766,10 @@ if life_dec1.upper() == "A":
                                             
                         # End chapter
                         print("[*STORY*]")
-                        print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your temper.")
-                        print("You can't tell if VERONICA was actually offended, or was trying to preemptively end the conversation. You watch")
-                        print("her for a few moments, trying to imagine what an imposter would act like, but it's fruitless. You dismiss her and")
-                        print("begin walking back to your quarters, lost in thought.")
+                        print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your")
+                        print("temper. You can't tell if VERONICA was actually offended, or was trying to preemptively end the conversation.")
+                        print("You watch her for a few moments, trying to imagine what an imposter would act like, but it's fruitless. You")
+                        print("dismiss her and begin walking back to your quarters, lost in thought.")
                         input()
                         
                         # Update storyline
@@ -797,13 +790,13 @@ if life_dec1.upper() == "A":
                 if intimidate_outcome2 < [50]:
                     print()
                     print("[SUCCESS]")
-                    print("VERONICA's eyes grow wide. She quickly looks away and her face grows red. She's... embarrassed? It takes")
-                    print("her a few moments before she starts speaking again.")
+                    print("VERONICA's eyes grow wide. She quickly looks away and her face grows red. She's... embarrassed? It takes her")
+                    print("a few moments before she starts speaking again.")
                     input()
                     print("[VERONICA]")
-                    print("I'm sorry, Commander. I should have been honest from the start. I... I woke up with a migraine and it")
-                    print("hurts so much that I'm having a hard time thinking about anything else. I could barely remember my")
-                    print("responsibilities, which is why I'm late to my post. I sincerely apologize.")
+                    print("I'm sorry, Commander. I should have been honest from the start. I... I woke up with a migraine and it hurts")
+                    print("so much that I'm having a hard time thinking about anything else. I could barely remember my responsibilities,")
+                    print("which is why I'm late to my post. I sincerely apologize.")
                     input()
                                                                     
                     # End chapter
@@ -862,11 +855,11 @@ if life_dec1.upper() == "A":
         if attack_outcome < [1]:
             print()
             print("[SUCCESS]")
-            print("'Nothing's wrong,' you mumble incoherently. Before VERONICA can respond, you grab a wrench from a nearby box and leap")
-            print("towards the scrubber. You hit it again and again! You can barely hear VERONICA shouting over your adrenaline, and you")
-            print("vaguely notice her trying to stop you, but to no avail. The outer shell of the scrubber pops off and reveals two thin")
-            print("gas tanks inside. You keep hitting the tanks and barely notice that VERONICA has run out of the room, her hands over")
-            print("her ears.")
+            print("'Nothing's wrong,' you mumble incoherently. Before VERONICA can respond, you grab a wrench from a nearby box and")
+            print("leap towards the scrubber. You hit it again and again! You can barely hear VERONICA shouting over your adrenaline,")
+            print("and you vaguely notice her trying to stop you, but to no avail. The outer shell of the scrubber pops off and reveals")
+            print("two thin gas tanks inside. You keep hitting the tanks and barely notice that VERONICA has run out of the room, her")
+            print("hands over her ears.")
             input()
             print("[*STORY*]")
             print("With one particularly vigorous swing, you momentarily hear a high-pitched whine before the tank explodes. Your vision")
@@ -906,11 +899,11 @@ if life_dec1.upper() == "A":
         if attack_outcome >= [1]:
             print()
             print("[FAILURE]")
-            print("'Nothing's wrong,' you mumble incoherently. Before VERONICA can respond, you grab a wrench from a nearby box and leap")
-            print("towards the scrubber. You hit it again and again! You can barely hear VERONICA shouting over your adrenaline, until")
-            print("suddenly she hits you in the head with something heavy and metallic. Your adrenaline could cover the gunshots of pain")
-            print("your headache gave you with each clang of the wrench against the scrubber's metal plate, but a hit to the head is too")
-            print("much. You slump to the ground and quickly lose consciousness.")
+            print("'Nothing's wrong,' you mumble incoherently. Before VERONICA can respond, you grab a wrench from a nearby box and")
+            print("leap towards the scrubber. You hit it again and again! You can barely hear VERONICA shouting over your adrenaline,")
+            print("until suddenly she hits you in the head with something heavy and metallic. Your adrenaline could cover the gunshots")
+            print("of pain your headache gave you with each clang of the wrench against the scrubber's metal plate, but a hit to the")
+            print("head is too much. You slump to the ground and quickly lose consciousness.")
             input()
             
             # Update suspicion
@@ -929,9 +922,10 @@ if life_dec1.upper() == "A":
 if life_dec1.upper() == 'B':
     print()
     print("[*STORY*]")
-    print("For such a critical component of the ship, the carbon scrubber is remarkably poorly defended. Probably because the designers")
-    print("didn't consider animosity from the crew... You pull a pipette tip from one of the drawers and with a few well-placed pushes,")
-    print("the outer shell of the scrubber pops off. Inside is a mess of pipes and two thin gas tanks, both incredibly cold.")
+    print("For such a critical component of the ship, the carbon scrubber is remarkably poorly defended. Probably because")
+    print("the designers didn't consider animosity from the crew... You pull a pipette tip from one of the drawers and with")
+    print("a few well-placed pushes, the outer shell of the scrubber pops off. Inside is a mess of pipes and two thin gas")
+    print("tanks, both incredibly cold.")
     input()
     
     # Response
@@ -949,13 +943,13 @@ if life_dec1.upper() == 'B':
     if life_dec1_1.upper() == 'A':
         print()
         print("[*STORY*]")
-        print("You begin unscrewing the tank, but it's secured surprisingly tightly. You glance around the room and spot a wrench in")
-        print("a box in the corner. You grab it and start working on the screws.")
+        print("You begin unscrewing the tank, but it's secured surprisingly tightly. You glance around the room and spot a wrench")
+        print("in a box in the corner. You grab it and start working on the screws.")
         input()
         print("[*STORY*]")
-        print("As the screws start to give way, you momentarily hear a high-pitched whine before the tank explodes. Your vision and")
-        print("hearing go, and as the room starts to fill with smoke and you slip into unconsciousness, you wonder why you thought")
-        print("this was a good idea...")
+        print("As the screws start to give way, you momentarily hear a high-pitched whine before the tank explodes. Your vision")
+        print("and hearing go, and as the room starts to fill with smoke and you slip into unconsciousness, you wonder why you")
+        print("thought this was a good idea...")
         input()
         print()
         print()
@@ -990,13 +984,13 @@ if life_dec1.upper() == 'B':
     if life_dec1_1.upper() == 'B':
         print()
         print("[*STORY*]")
-        print("Screw it, life is short. Let's make it shorter. You glance around the room and spot a wrench in a box in the corner.")
-        print("You grab it and start hitting the tanks and shouting like a crazy person. Which you are.")
+        print("Screw it, life is short. Let's make it shorter. You glance around the room and spot a wrench in a box in the")
+        print("corner. You grab it and start hitting the tanks and shouting like a crazy person. Which you are.")
         input()
         print("[*STORY*]")
-        print("With one particularly vigorous swing, you momentarily hear a high-pitched whine before the tank explodes. Your vision")
-        print("and hearing go, and the room starts to fill with smoke. As you slip into unconsciousness, you're strangely satisfied.")
-        print("Try getting out of this one, imposter...")
+        print("With one particularly vigorous swing, you momentarily hear a high-pitched whine before the tank explodes. Your")
+        print("vision and hearing go, and the room starts to fill with smoke. As you slip into unconsciousness, you're strangely")
+        print("satisfied. Try getting out of this one, imposter...")
         input()
         input(".")
         input(".")
