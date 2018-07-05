@@ -13,12 +13,12 @@ player = pickle.load(open('player_stats.pkl', 'rb'))
 
 print()
 print("[*STORY*]")
-print("You holster your laser knife and exit your quarters. The door slides and locks behind you. You are in a well-lit white")
-print("hallway. As you walk towards the engine room, the hallway gradually changes to metallic, pipes overhead and metal")
-print("grating on the floor and walls. A crew of three is hardly enough to finance fancy white panelling for the entire ship,")
-print("you suppose. The door to the engine room opens as you approach and you see BENJAMIN working. He is wearing the standard")
-print("mechanic attire - dark green pants and light green shirt. While most of his hair has balded off already, the little")
-print("that remains is brown.")
+print("You holster your laser knife and exit your quarters. The door slides and locks behind you. You are in a well-lit")
+print("white hallway. As you walk towards the engine room, the hallway gradually changes to metallic, pipes overhead and")
+print("metal grating on the floor and walls. A crew of three is hardly enough to finance fancy white panelling for the")
+print("entire ship, you suppose. The door to the engine room opens as you approach and you see BENJAMIN working. He is")
+print("wearing the standard mechanic attire - dark green pants and light green shirt. While most of his hair has balded")
+print("off already, the little that remains is brown.")
 input()
 print("[*STORY*]")
 print("BENJAMIN appears distracted and hasn't noticed you; he is hunched over something.")
@@ -130,9 +130,9 @@ if eng_dec1.upper() == "A":
         if sneak_outcome >= [75]:
             print()
             print("[SUCCESS]")
-            print("You carefully avoid stepping on a loose wrench as you tiptoe around BENJAMIN. You look over his shoulder and")
-            print("see... BENJAMIN's profile. He is looking at information about himself, his hometown and travel logs. He seems")
-            print("concerned and confused.")
+            print("You carefully avoid stepping on a loose wrench as you tiptoe around BENJAMIN. You look over his shoulder and see...")
+            print("BENJAMIN's profile. He is looking at information about himself, his hometown and travel logs. He seems concerned")
+            print("and confused.")
             input()
             
             # Commander talks to him
@@ -142,21 +142,34 @@ if eng_dec1.upper() == "A":
             
             # BENJAMIN nervous
             print("[BENJAMIN]")
-            print(f"Commander {player['name']}! I didn't hear you there. I'm sorry. I'm just... I just confused. I woke up with")
-            print("a headache. Nothing I can't handle, though, Commander.")
+            print(f"Commander {player['name']}! I didn't hear you there. I'm sorry. I'm just... I just confused. I woke up with a")
+            print("headache. Nothing I can't handle, though, Commander.")
+            input()
+            
+            # You respond
+            print("[*STORY*]")
+            print("Headache?? Just like you had a headache this morning? You're about to speak but it looks like he's weighing")
+            print("whether or not to say something. He can tell you saw him reading his own files. You let the silence stretch on")
+            print("until he finally starts talking.")
+            input()
+            
+            # BENJAMIN reveals he has amnesia
+            print("[BENJAMIN]")
+            print("Sorry, Commander, I... I'm not feeling well. My... my headache is so bad that it's messing with my head. I'm")
+            print("having a hard time remembering things. But I promise it won't interfere with my work.")
             input()
             
             print("[*STORY*]")
-            print("Did BENJAMIN just say he has a headache? Like how you did this morning? You press him on it but he seems embarassed")
-            print("and doesn't want to elaborate. As far as you can tell, there is no alcohol or intoxicants on the ship, and")
+            print("Headache *and* amnesia?? Your stomach turns. You press BENJAMIN for more details but he seems embarassed and")
+            print("doesn't want to elaborate. As far as you can tell, there is no alcohol or intoxicants on the ship, and")
             print("communications with Earth are too limited for him to have been up late about something there. Maybe his memory")
-            print("has also been erased? You would ask him facts about himself to test him but you can't remember any facts about him,")
-            print("either... could he be the imposter? It's hard to tell, but it doesn't seem like it. You talk for a few moments before")
-            print("you excuse yourself and return to your quarters, lost in thought.")                
+            print("has also been erased? You would ask him facts about himself to test him but you can't remember any facts about")
+            print("him, either... could he be the imposter? It's hard to tell, but it doesn't seem like it. You talk absently for a")
+            print("few moments before you excuse yourself and return to your quarters, lost in thought.")                
             
             # Update storyline
             player['ch_1'] = {'room': 'engine',
-                              'outcome': 'minor_reveal'}
+                              'outcome': 'major_reveal'}
             player['chapter'] = 2
             save_object(player, "player_stats.pkl")
             
@@ -223,8 +236,8 @@ if talk == True:
             print("BENJAMIN is startled by your anger... but his face turns red and he clenches his fists.")
             input()
             print("[BENJAMIN]")
-            print("Commander, I apologize but I don't think I deserve that tone of voice. I'm - I - I need to - I'm sorry but I")
-            print("need to get back to work.")
+            print("Commander, I apologize but I don't think I deserve that tone of voice. I'm - I - I need to - I'm sorry but I need")
+            print("to get back to work.")
             
             # Update suspicion
             player['crew_suspicion']['BENJAMIN'] += 1
@@ -245,8 +258,8 @@ if talk == True:
             print("BENJAMIN is startled by your anger. He stumbles back and stutters, struggling to find his words.")
             input()
             print("[BENJAMIN]")
-            print("I, I... I'm sorry, Captain. I'm not feeling like myself. I just have such a headache. But... I promise this")
-            print("won't impact my work.")
+            print("I, I... I'm sorry, Captain. I'm not feeling like myself. I just have such a headache. But... I promise this won't")
+            print("impact my work.")
             input()
             
             # Push BENJAMIN a little further
@@ -274,24 +287,23 @@ if talk == True:
                 if intimidate_outcome2 < [80]:
                     print()
                     print("[SUCCESS]")
-                    print("BENJAMIN visibly begins to sweat. You can't remember if you're a tough commander or not... when this is")
-                    print("all over, you should try intimidation more often.")
+                    print("BENJAMIN visibly begins to sweat. You can't remember if you're a tough commander or not... when this is all")
+                    print("over, you should try intimidation more often.")
                     input()
                     print("[BENJAMIN]")
                     print("Captain. I sincerely apologize. I - I know this sounds crazy, but I have such a headache. I can't...")
                     input()
                     print("[BENJAMIN]")
-                    print("My head hurts so bad I can't remember anything. It's just a fog. I don't know why. But I promise you. It")
-                    print("won't affect my work.")
+                    print("My head hurts so bad I can't remember anything. It's just a fog. I don't know why. But I promise you. It won't")
+                    print("affect my work.")
                     input()
                     
                     # End chapter
                     print("[*STORY*]")
-                    print("BENJAMIN is beet red at this point and mumbles about wanting to get back to work. You permit him and then")
-                    print("begin the walk back to your quarters. BENJAMIN's headache sounds just like yours this morning. As far as")
-                    print("you can tell, there is no alcohol or intoxicants on the ship, so he can't have a hangover. His headache")
-                    print("is strange, indeed... but his words about being unable to remember anything - just like you - make your")
-                    print("skin crawl.")
+                    print("BENJAMIN is beet red at this point and mumbles about wanting to get back to work. You permit him and then begin")
+                    print("the walk back to your quarters. BENJAMIN's headache sounds just like yours this morning. As far as you can tell,")
+                    print("there is no alcohol or intoxicants on the ship, so he can't have a hangover. His headache is strange, indeed...")
+                    print("but his words about being unable to remember anything - just like you - make your skin crawl.")
                     input()
                     
                     # Update storyline
@@ -314,12 +326,11 @@ if talk == True:
                     
                     # End chapter
                     print("[*STORY*]")
-                    print("Part of you feels like making BENJAMIN do push-ups, but you can't remember if that's what you would normally")
-                    print("do... or if commanders normally do... lost in thought, it takes you a few moments to realize that BENJAMIN is")
-                    print("staring at you. You dismiss him and slowly begin the walk back to your quarters. BENJAMIN's headache sounds")
-                    print("just like yours from this morning. As far as you can tell, there is no alcohol or intoxicants on the ship, so")
-                    print("he can't have a hangover. You wish you could have gotten more information... but it seems you pushed him too")
-                    print("far.")
+                    print("Part of you feels like making BENJAMIN do push-ups, but you can't remember if that's what you would normally do...")
+                    print("or if commanders normally do... lost in thought, it takes you a few moments to realize that BENJAMIN is staring at")
+                    print("you. You dismiss him and slowly begin the walk back to your quarters. BENJAMIN's headache sounds just like yours")
+                    print("from this morning. As far as you can tell, there is no alcohol or intoxicants on the ship, so he can't have a")
+                    print("hangover. You wish you could have gotten more information... but it seems you pushed him too far.")
                     input()
                     
                     # Update suspicion
@@ -505,17 +516,16 @@ if talk == True:
                     print("BENJAMIN's cocky smile fades a little. He glances around and then leans in.")
                     input()
                     print("[BENJAMIN]")
-                    print("Commander. When I woke up this morning, I couldn't remember anything... and my head hurt like nothing")
-                    print("else. I have to admit... I'm not even quite sure who you are... captain. I think we should be very")
-                    print("careful with what we say aloud. The ship - it listens. And I don't think it means us well.")
+                    print("Commander. When I woke up this morning, I couldn't remember anything... and my head hurt like nothing else. I")
+                    print("have to admit... I'm not even quite sure who you are... captain. I think we should be very careful with what")
+                    print("we say aloud. The ship - it listens. And I don't think it means us well.")
                     input()
                     
                     # End chapter         
                     print("[*STORY*]")
-                    print("BENJAMIN laughs nervously and then makes some idle chat for a few minutes. His voice seems strained.")
-                    print("Could he really mean what he said? How would he know? You search your memory but as usual, it comes")
-                    print("up empty-handed. If you can't trust the Ship AI... you dismiss BENJAMIN and walk slowly back")
-                    print("to your quarters.")
+                    print("BENJAMIN laughs nervously and then makes some idle chat for a few minutes. His voice seems strained. Could he")
+                    print("really mean what he said? How would he know? You search your memory but as usual, it comes up empty-handed. If")
+                    print("you can't trust the Ship AI... you dismiss BENJAMIN and walk slowly back to your quarters, lost in thought.")
                     input()
                 
                     # Update storyline
@@ -566,17 +576,16 @@ if talk == True:
                     print("BENJAMIN's cocky smile fades into a more genuine one. He shrugs, glances around, and then leans in.")
                     input()
                     print("[BENJAMIN]")
-                    print("Commander. Just a word of caution, one, er, friend to another. Speaking as colleagues... I've got a bit")
-                    print("of a headache, that's all. Can't remember how I got it. Promise it's not any booze... you know as well")
-                    print("as I do that there's nothing to drink on the ship.")
+                    print("Commander. Just a word of caution, one, er, friend to another. Speaking as colleagues... I've got a bit of a")
+                    print("headache, that's all. Can't remember how I got it. Promise it's not any booze... you know as well as I do that")
+                    print("there's nothing to drink on the ship.")
                     input()
                     
                     # End chapter         
                     print("[*STORY*]")
-                    print("BENJAMIN laughs and then makes some idle chat for a few minutes. He does look like he has a headache; he")
-                    print("winces every now and then while he's talking. His headache sounds a bit like what you had this morning...")
-                    print("but how could he not remember how we got it? You dismiss BENJAMIN and walk slowly back to your quarters,")
-                    print("lost in thought.")
+                    print("BENJAMIN laughs and then makes some idle chat for a few minutes. He does look like he has a headache; he winces")
+                    print("every now and then while he's talking. His headache sounds a bit like what you had this morning... but how could")
+                    print("he not remember how we got it? You dismiss BENJAMIN and walk slowly back to your quarters, lost in thought.")
                     input()
                 
                     # Update storyline
@@ -598,9 +607,9 @@ if talk == True:
                     
                     # End chapter
                     print("[*STORY*]")
-                    print("You dismiss BENJAMIN. You can't tell if you're frustrated or disappointed... being friendly as a commander")
-                    print("is always a gamble, but it had felt worth it with him. There's no point trying to say anything further; the")
-                    print("moment is already awkward enough. You walk slowly back to your quarters... awkwardly.")
+                    print("You dismiss BENJAMIN. You can't tell if you're frustrated or disappointed... being friendly as a commander is")
+                    print("always a gamble, but it had felt worth it with him. There's no point trying to say anything further; the moment")
+                    print("is already awkward enough. You walk slowly back to your quarters... awkwardly.")
                     input()
                     
                     # Update storyline
@@ -704,12 +713,4 @@ if attack == True:
                           'outcome': 'kill_nothing'}
         player['chapter'] = 2
         save_object(player, "player_stats.pkl")
-        
-    
-        
-        
-        
-        
-        
-        
         
