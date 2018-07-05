@@ -26,13 +26,14 @@ player = pickle.load(open('player_stats.pkl', 'rb'))
 
 print()
 print("[*STORY*]")
-print("Time is running out, indeed. You exit your quarters, absently fingering your laser knife as you walk. You are in a well-")
-print("lit white hallway, and as you walk towards the life support systems, you pass a window peering out at the cosmos. Pluto")
-print("looms large below you. You continue walking towards life support, which in this ship also doubles as an infirmary and")
-print("biological research station. The ship's designers apparently figured that anything vaguely life-related should be put in")
-print("the same room. The door opens automatically as you approach and you enter a room full of fridge-sized machines, along with")
-print("a small cramped desk with nothing but a microscope. VERONICA is sitting at the microscope but looks up as you enter. She is")
-print("short, with cropped red hair and the standard brown uniform.")
+print("Time is running out, indeed. You exit your quarters, absently fingering your laser knife as you walk. You are")
+print("in a well-lit white hallway, and as you walk towards the life support systems, you pass a window peering out at")
+print("the cosmos. Pluto looms large below you. You continue walking towards life support, which in this ship also")
+print("doubles as an infirmary and biological research station. The ship's designers apparently figured that anything")
+print("vaguely life-related should be put in the same room. The door opens automatically as you approach and you enter")
+print("a room full of fridge-sized machines, along with a small cramped desk with nothing but a microscope. VERONICA is")
+print("sitting at the microscope but looks up as you enter. She is short, with cropped red hair and the standard brown")
+print("uniform.")
 input()      
 
 # VERONICA talks to you
@@ -168,45 +169,47 @@ if life_dec1.upper() == "A":
                 # End chapter (based on what happened in chapter one)                      
                 if player['ch_1']['outcome'] in ['kill_hide', 'kill_lock']:
                     print("[*STORY*]")
-                    print("Headache? That sounds like what you were feeling this morning... and still continue to feel. Your hand")
-                    print("itches for the knife in your pocket but you hold back. You make some idle chat with VERONICA for a minute")
-                    print("before dismissing her and beginning the walk back to your quarters. Having a hazy memory sure sounds like")
-                    print("something an imposter would say, but SHIP may have more insights...")
+                    print("Headache? That sounds like what you were feeling this morning... and still continue to feel. Your hand itches")
+                    print("for the knife in your pocket but you hold back. You make some idle chat with VERONICA for a minute before")
+                    print("dismissing her and beginning the walk back to your quarters. Having a hazy memory sure sounds like something")
+                    print("an imposter would say, but SHIP may have more insights...")
                     input()
                 
                 if player['ch_1']['outcome'] == 'failure':
                     print("[*STORY*]")
-                    print("A headache? That sounds a bit like what you were feeling this morning... and still continue to feel. You make some")
-                    print("idle chat with VERONICA for a minute before dismissing her and slowly beginning the walk back to your quarters. A")
-                    print("headache sounds like an excuse just to quickly end the conversation, just how BENJAMIN didn't want to talk to you.")
-                    print("Though maybe that's because you're so awkward. Did VERONICA not want to talk to you because you're awkward?...")
-                    print("you because you're awkward?...")
+                    print("A headache? That sounds a bit like what you were feeling this morning... and still continue to feel. You make")
+                    print("some idle chat with VERONICA for a minute before dismissing her and slowly beginning the walk back to your")
+                    print("quarters. A headache sounds like an excuse just to quickly end the conversation, just how BENJAMIN didn't want")
+                    print("to talk to you. Though maybe that's because you're so awkward. Did VERONICA not want to talk to you because")
+                    print("you're so awkward?...")
                     input()
                 
                 if player['ch_1']['outcome'] == 'minor_reveal':
                     print("[*STORY*]")
-                    print("A headache?? That sounds like what you were feeling this morning... and still continue to feel. BENJAMIN mentioned")
-                    print("that he had a headache, too. Your heart drops. Somehow, all crew members awoke with a headache this morning... you")
-                    print("consider telling VERONICA about BENJAMIN but you decide to keep quiet. You dismiss VERONICA and slowly begin walking")
-                    print("back to your quarters, a knot in your stomach.")
+                    print("A headache?? That sounds like what you were feeling this morning... and still continue to feel. BENJAMIN")
+                    print("mentioned that he had a headache, too. Your heart drops. Somehow, all crew members awoke with a headache this")
+                    print("morning... you consider telling VERONICA about BENJAMIN but you decide to keep quiet. You dismiss VERONICA and")
+                    print("slowly begin walking back to your quarters, a knot in your stomach.")
                     input()
                     
                 if player['ch_1']['outcome'] == 'major_reveal':
                     print("[*STORY*]")
-                    print("A headache?? That sounds uncomfortably like what you were feeling this morning... and still continue to feel. BENJAMIN")
-                    print("mentioned that he had a headache, too. Your heart drops. Somehow, all crew members awoke with a headache this morning...")
-                    print("and at least you and BENJAMIN also have memory loss. Suddenly, you feel a lot less safe than you felt before. You")
-                    print("absently dismiss VERONICA and slowly start walking back to your quarters. This is going to require some thinking...")
+                    print("A headache?? That sounds uncomfortably like what you were feeling this morning... and still continue to feel.")
+                    print("BENJAMIN mentioned that he had a headache, too. Your heart drops. Somehow, all crew members awoke with a")
+                    print("headache this morning... and at least you and BENJAMIN also have memory loss. Suddenly, you feel a lot less")
+                    print("safe than you felt before. You absently dismiss VERONICA and slowly start walking back to your quarters. This")
+                    print("is going to require some thinking...")
                     input()
                     
                 if player['ch_1']['outcome'] == 'full_reveal':
                     print("[*STORY*]")
-                    print("A headache?? That sounds uncomfortably like what you were feeling this morning... and still continue to feel. BENJAMIN")
-                    print("mentioned that he had a headache, too. Your heart drops. Somehow, all crew members awoke with a headache this morning...")
-                    print("and at least you and BENJAMIN also have memory loss. Suddenly, you feel a lot less safe than you felt before. Your")
-                    print("thoughts dart back to BENJAMIN and what he said about trusting the Ship. Could the Ship somehow be related to the fact")
-                    print("that everyone had memory loss?? You absently dismiss VERONICA and slowly begin walking back to your quarters. This is")
-                    print("going to require some thinking... if you can stop your hands from shaking first.")
+                    print("A headache?? That sounds uncomfortably like what you were feeling this morning... and still continue to feel.")
+                    print("BENJAMIN mentioned that he had a headache, too. Your heart drops. Somehow, all crew members awoke with a")
+                    print("headache this morning... and at least you and BENJAMIN also have memory loss. Suddenly, you feel a lot less")
+                    print("safe than you felt before. Your thoughts dart back to BENJAMIN and what he said about trusting the Ship AI.")
+                    print("Could SHIP somehow be related to the fact that everyone had memory loss?? You absently dismiss VERONICA and")
+                    print("slowly begin walking back to your quarters. This is going to require some thinking... if you can stop your")
+                    print("hands from shaking first.")
                     input()
                     
                 # Update storyline
@@ -223,8 +226,8 @@ if life_dec1.upper() == "A":
                 print("VERONICA's smile falters. Maybe that was a bad idea.")
                 input()
                 print("[VERONICA]")
-                print("Commander, I'm certainly not hiding things or lying to you. I don't appreciate the accusation. If you'll excuse me, I")
-                print("need to get back to work. Thank you.")
+                print("Commander, I'm certainly not hiding things or lying to you. I don't appreciate the accusation. If you'll excuse")
+                print("me, I need to get back to work. Thank you.")
                 input()
                             
                 # Update suspicion
@@ -235,9 +238,9 @@ if life_dec1.upper() == "A":
                 # End chapter
                 print("[*STORY*]")
                 print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your temper.")
-                print("You can't tell if VERONICA was actually offended, or was trying to preemptively end the conversation. You watch her")
-                print("for a few moments, trying to imagine what an imposter would act like, but it's fruitless. You dismiss her and begin")
-                print("walking back to your quarters, lost in thought.")
+                print("You can't tell if VERONICA was actually offended, or was trying to preemptively end the conversation. You watch")
+                print("her for a few moments, trying to imagine what an imposter would act like, but it's fruitless. You dismiss her and")
+                print("begin walking back to your quarters, lost in thought.")
                 input()
                 
                 # Update storyline
@@ -447,12 +450,12 @@ if life_dec1.upper() == "A":
                                     
                     # End chapter
                     print("[*STORY*]")
-                    print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your")
-                    print("temper and revealing so much... what were you thinking? You can't remember... which just makes you even")
-                    print("angrier. You also can't tell if VERONICA was actually offended or was just trying to preemptively end the")
-                    print("conversation. You watch her for a few moments, trying to imagine what an imposter would act like, but it's")
-                    print("fruitless. You dismiss her (though she's already acting like she's been dismissed) and begin walking back")
-                    print("to your quarters, lost in thought.")
+                    print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your temper")
+                    print("and revealing so much... what were you thinking? You can't remember... which just makes you even angrier. You")
+                    print("also can't tell if VERONICA was actually offended or was just trying to preemptively end the conversation. You")
+                    print("watch her for a few moments, trying to imagine what an imposter would act like, but it's fruitless. You dismiss")
+                    print("her (though she's already acting like she's been dismissed) and begin walking back to your quarters, lost in")
+                    print("thought.")
                     input()
                 
                     # Update storyline
@@ -470,10 +473,9 @@ if life_dec1.upper() == "A":
                     print("speaks.")
                     input()
                     print("[VERONICA]")
-                    print("I'm sorry, Commander. I should have been honest from the start. I... I woke up with a migraine and it hurts")
-                    print("so much that I'm having a hard time thinking about anything else. I'm having a hard time focusing, and I can")
-                    print("barely remember my tasks for the day. I apologize for being curt, but I just want to finish my work so I can")
-                    print("rest.")
+                    print("I'm sorry, Commander. I should have been honest from the start. I... I woke up with a migraine and it hurts so")
+                    print("much that I'm having a hard time thinking about anything else. I'm having a hard time focusing, and I can barely")
+                    print("remember my tasks for the day. I apologize for being curt, but I just want to finish my work so I can rest.")
                     input()
                     
                     # End chapter (based on what happened in chapter one)                       
@@ -481,44 +483,45 @@ if life_dec1.upper() == "A":
                         print("[*STORY*]")
                         print("Headache? Hazy memory?? That sounds like what you were feeling this morning... and still continue to feel. Your")
                         print("hand itches for the knife in your pocket but you hold back. You make some idle chat with VERONICA for a minute")
-                        print("before dismissing her and beginning the walk back to your quarters. Having a hazy memory sure sounds like something")
-                        print("an imposter would say, but SHIP may have more insights...")
+                        print("before dismissing her and beginning the walk back to your quarters. Having a hazy memory sure sounds like")
+                        print("something an imposter would say, but SHIP may have more insights...")
                         input()
                     
                     if player['ch_1']['outcome'] == 'failure':
                         print("[*STORY*]")
-                        print("Headache? Hazy memory?? That sounds uncomfortably like what you were feeling this morning... and still continue to feel.")
-                        print("You make some idle chat with VERONICA for a minute before dismissing her and slowly beginning the walk back to your")
-                        print("quarters. Having a hazy memory sure sounds like something an imposter would say... but on second thought, you're not")
-                        print("sure. Your thoughts wander back to BENJAMIN and how little information he was willing to share...")
+                        print("Headache? Hazy memory?? That sounds uncomfortably like what you were feeling this morning... and still continue")
+                        print("to feel. You make some idle chat with VERONICA for a minute before dismissing her and slowly beginning the walk")
+                        print("back to your quarters. Having a hazy memory sure sounds like something an imposter would say... but on second")
+                        print("thought, you're not sure. Your thoughts wander back to BENJAMIN and how little information he was willing to")
+                        print("share...")
                         input()
                         
                     if player['ch_1']['outcome'] == 'minor_reveal':
                         print("[*STORY*]")
-                        print("Headache? Hazy memory?? That sounds uncomfortably like what you were feeling this morning... and still continue to feel.")
-                        print("BENJAMIN mentioned that he had a headache, too. Your heart drops. Somehow, all crew members awoke with a headache this")
-                        print("morning... and at least you and VERONICA are having trouble remembering things. You consider telling VERONICA about")
-                        print("BENJAMIN... but you decide to keep quiet. You dismiss VERONICA and slowly begin walking back to your quarters, a knot")
-                        print("in your stomach.")
+                        print("Headache? Hazy memory?? That sounds uncomfortably like what you were feeling this morning... and still continue")
+                        print("to feel. BENJAMIN mentioned that he had a headache, too. Your heart drops. Somehow, all crew members awoke with")
+                        print("a headache this morning... and at least you and VERONICA are having trouble remembering things. You consider")
+                        print("telling VERONICA about BENJAMIN... but you decide to keep quiet. You dismiss VERONICA and slowly begin walking")
+                        print("back to your quarters, a knot in your stomach.")
                         input()
                     
                     if player['ch_1']['outcome'] == 'major_reveal':
                         print("[*STORY*]")
-                        print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've been")
-                        print("feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of who they really")
-                        print("are... and head pain. Suddenly, you feel a lot less safe than you felt before. You absently dismiss VERONICA and slowly")
-                        print("start walking back to your quarters. This is going to require some thinking, if you can stop your hands from shaking")
-                        print("first.")
+                        print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've")
+                        print("been feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of")
+                        print("who they really are... and head pain. Suddenly, you feel a lot less safe than you felt before. You absently")
+                        print("dismiss VERONICA and slowly start walking back to your quarters. This is going to require some thinking, if you")
+                        print("can stop your hands from shaking first.")
                         input()
                     
                     if player['ch_1']['outcome'] == 'full_reveal':
                         print("[*STORY*]")
-                        print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've been")
-                        print("feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of who they really")
-                        print("are... and head pain. Suddenly, you feel a lot less safe than you felt before, and your thoughts rush back to BENJAMIN")
-                        print("and what he said about trusting SHIP. If you can't trust SHIP, and everyone is experiencing amnesia and head pain...")
-                        print("you absently dismiss VERONICA and start walking back to your quarters. This is going to require some thinking, if you")
-                        print("can stop your hands from shaking first.")
+                        print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've")
+                        print("been feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of")
+                        print("who they really are... and head pain. Suddenly, you feel a lot less safe than you felt before, and your thoughts")
+                        print("rush back to BENJAMIN and what he said about trusting SHIP. If you can't trust SHIP, and everyone is experiencing")
+                        print("amnesia and head pain... you absently dismiss VERONICA and start walking back to your quarters. This is going to")
+                        print("require some thinking, if you can stop your hands from shaking first.")
                         input()
                         
                     # Update storyline
@@ -840,12 +843,11 @@ if intimidate == True:
                             
             # End chapter
             print("[*STORY*]")
-            print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your")
-            print("temper... what were you thinking? You can't remember... which just makes you even angrier. You also can't")
-            print("tell if VERONICA was actually offended or was just trying to preemptively end the conversation. You watch")
-            print("her for a few moments, trying to imagine what an imposter would act like, but it's fruitless. You dismiss")
-            print("her (though she's already acting like she's been dismissed) and begin walking back to your quarters, lost")
-            print("in thought.")
+            print("No luck. You want to press VERONICA further, but the conversation is clearly over. You regret losing your temper...")
+            print("what were you thinking? You can't remember... which just makes you even angrier. You also can't tell if VERONICA")
+            print("was actually offended or was just trying to preemptively end the conversation. You watch her for a few moments,")
+            print("trying to imagine what an imposter would act like, but it's fruitless. You dismiss her (though she's already")
+            print("acting like she's been dismissed) and begin walking back to your quarters, lost in thought.")
             input()
         
             # Update storyline
@@ -863,10 +865,9 @@ if intimidate == True:
             print("speaks.")
             input()
             print("[VERONICA]")
-            print("I'm sorry, Commander. I've just been having a strange day. I... I woke up with a migraine and it hurts so")
-            print("much that I'm having a hard time thinking about anything else. I'm having a hard time focusing, and I can")
-            print("barely remember my tasks for the day. I apologize for being curt, but I just want to finish my work so I can")
-            print("rest.")
+            print("I'm sorry, Commander. I've just been having a strange day. I... I woke up with a migraine and it hurts so much")
+            print("that I'm having a hard time thinking about anything else. I'm having a hard time focusing, and I can barely")
+            print("remember my tasks for the day. I apologize for being curt, but I just want to finish my work so I can rest.")
             input()
             
             # End chapter (based on what happened in chapter one)
@@ -898,21 +899,21 @@ if intimidate == True:
             
             if player['ch_1']['outcome'] == 'major_reveal':
                 print("[*STORY*]")
-                print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've been")
-                print("feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of who they really")
-                print("are... and head pain. Suddenly, you feel a lot less safe than you felt before. You absently dismiss VERONICA and slowly")
-                print("start walking back to your quarters. This is going to require some thinking, if you can stop your hands from shaking")
-                print("first.")
+                print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've")
+                print("been feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of who")
+                print("they really are... and head pain. Suddenly, you feel a lot less safe than you felt before. You absently dismiss")
+                print("VERONICA and slowly start walking back to your quarters. This is going to require some thinking, if you can stop")
+                print("your hands from shaking first.")
                 input()
             
             if player['ch_1']['outcome'] == 'full_reveal':
                 print("[*STORY*]")
-                print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've been")
-                print("feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of who they really")
-                print("are... and head pain. Suddenly, you feel a lot less safe than you felt before, and your thoughts rush back to BENJAMIN")
-                print("and what he said about trusting SHIP. If you can't trust SHIP, and everyone is experiencing amnesia and head pain...")
-                print("you absently dismiss VERONICA and start walking back to your quarters. This is going to require some thinking, if you")
-                print("can stop your hands from shaking first.")
+                print("Your jaw drops. Headache? Memory loss?? That's exactly what BENJAMIN said he was experiencing, and that you've")
+                print("been feeling all day. Your heart starts racing. Somehow, all crew members awoke today with no recollection of who")
+                print("they really are... and head pain. Suddenly, you feel a lot less safe than you felt before, and your thoughts rush")
+                print("back to BENJAMIN and what he said about trusting SHIP. If you can't trust SHIP, and everyone is experiencing")
+                print("amnesia and head pain... you absently dismiss VERONICA and start walking back to your quarters. This is going to")
+                print("require some thinking, if you can stop your hands from shaking first.")
                 input()
                 
             # Update storyline
@@ -926,15 +927,16 @@ if intimidate == True:
 if attack == True:
     print()
     print("[*STORY*]")
-    print("You slowly walk towards VERONICA, your hand on the knife in your pocket. Her eyes dart to your pocket and then back up")
-    print("to you.")
+    print("You slowly walk towards VERONICA, your hand on the knife in your pocket. Her eyes dart to your pocket and then back")
+    print("up to you.")
     input()
     print("[*STORY*]")
-    print("You attack! You leap at VERONICA, pulling out the laser knife and swinging down at her. She rolls out of the way, faster")
-    print("than you'd expected, and pulls out her own laser knife. Where did she...? Too late to think now. You swing at her again")
-    print("but she blocks your arm and swiftly cuts across your ribs, tearing your uniform. Before you can react, she's behind you")
-    print("and you feel a sudden sharp, burning feeling in your back. You look down and see the knife protruding from your chest.")
-    print("You fall to your knees as the darkness rushes in, and your last thoughts are that at least you caught the imposter...")
+    print("You attack! You leap at VERONICA, pulling out the laser knife and swinging down at her. She rolls out of the way,")
+    print("faster than you'd expected, and pulls out her own laser knife. Where did she...? Too late to think now. You swing")
+    print("at her again but she blocks your arm and swiftly cuts across your ribs, tearing your uniform. Before you can react,")
+    print("she's behind you and you feel a sudden sharp, burning feeling in your back. You look down and see the knife")
+    print("protruding from your chest. You fall to your knees as the darkness rushes in, and your last thoughts are that at")
+    print("least you caught the imposter...")
     input()
     input(".")
     input(".")
@@ -967,6 +969,3 @@ if attack == True:
     quit()
                 
                 
-                
-                
-  
