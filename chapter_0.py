@@ -23,15 +23,15 @@ player['ch_3'] = dict()
 scrolling_binary(screen_size=37, n_rows=12, n_spaces=10, time_sleep=0.5)
 
 for step in range(len("Hello.")):
-    
+
     binary = np.random.randint(2, size = (73 - (step*2) + 1))
     str_binary = " " * 10 + str(binary)[1:len(binary)] + " "
     str_binary = str_binary + "H e l l o."[0:(step*2)]
     print('\r' + str_binary, end = '')
-    
+
     time.sleep(0.5)
 
-#------------------------------------------------------------------------------------------    
+#------------------------------------------------------------------------------------------
 print("\n" * 1)
 
 time.sleep(1)
@@ -46,7 +46,7 @@ time.sleep(3)
 
 print("\n" + "Commander, can you hear me?")
 
-time.sleep(2)    
+time.sleep(2)
 
 #-----------------------------------------------------------------------------------
 player['name'] = ""
@@ -61,7 +61,7 @@ print("\n" + "Commander {}, there has been a breach.".format(player['name']))
 print()
 time.sleep(2)
 
-############################################################################################# 
+##########################################################################################
 # Scrolling binary, slower
 
 scrolling_binary(screen_size=37, n_rows=5, n_spaces=10, time_sleep=1)
