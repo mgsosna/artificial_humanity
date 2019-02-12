@@ -61,7 +61,11 @@ print("\n" + "Commander {}, there has been a breach.".format(player['name']))
 print()
 time.sleep(2)
 
+<<<<<<< HEAD
 ############################################################################################
+=======
+##########################################################################################
+>>>>>>> efc8a6793302600840d5d91d5983cb84dc65a4fb
 # Scrolling binary, slower
 
 scrolling_binary(screen_size=37, n_rows=5, n_spaces=10, time_sleep=1)
