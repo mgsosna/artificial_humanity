@@ -25,7 +25,7 @@ player = pickle.load(open('player_stats.pkl', 'rb'))
 # Print binary
 print()
 scrolling_binary(screen_size=binary_length, n_spaces=binary_spaces, n_rows=binary_rows, time_sleep=binary_sleep)
-    
+
 # Display start of chapter two
 print()
 print(" " * (susp_spaces-6), "*" * 51)
@@ -73,23 +73,23 @@ elif player['ch_2']['outcome'] in ['kill_hide', 'kill_lock']:
 
 # You totally failed at getting any info
 if player['ch_1']['outcome'] == 'failure' and player['ch_2']['outcome'] == 'failure':
-    end_state = 'failure'  
+    end_state = 'failure'
     mixed_info = False
-    
+
 # You know everyone has headaches
 if player['ch_1']['outcome'] == 'minor_reveal' and player['ch_2']['outcome'] in ['minor_reveal', 'major_reveal']:
     all_headaches = True
     mixed_info = False
-  
+
 if player['ch_1']['outcome'] in ['minor_reveal', 'major_reveal'] and player['ch_2']['outcome'] == 'minor_reveal':
     all_headaches = True
     mixed_info = False
-    
+
 # You know everyone has headaches + amnesia
 if player['ch_1']['outcome'] == 'major_reveal' and player['ch_2']['outcome'] == 'major_reveal':
     all_amnesia = True
     mixed_info = False
-    
+
 # You know not to trust SHIP
 if (player['ch_1']['room'] == 'engine' and player['ch_1']['outcome'] == 'full_reveal') or (player['ch_2']['room'] == 'engine' and player['ch_2']['outcome'] == 'full_reveal'):
     distrust_ship = True
@@ -99,11 +99,11 @@ if (player['ch_1']['room'] == 'engine' and player['ch_1']['outcome'] == 'full_re
 if (player['ch_1']['room'] == 'life' and player['ch_1']['outcome'] == 'full_reveal') or (player['ch_2']['room'] == 'life' and player['ch_2']['outcome'] == 'full_reveal'):
     antidote = True
     mixed_info = False
-    
+
 # If both full_reveals, then the team signals to you to meet them at Zone D
 if distrust_ship == True and antidote == True:
     team_signal = True
-    
+
 ####################################################################################################################################
 # Chapter start: you're walking towards your quarters
 
@@ -121,7 +121,7 @@ if mixed_info == True:
     print("Your footsteps are slow, thoughtful as you walk towards your quarters. You thought that talking to BENJAMIN and")
     print("VERONICA would clarify things, but you're somehow just more confused now. You're not sure what to do... maybe SHIP")
     print("will know.")
-          
+
 # Killer - can't escape going to room
 if end_state in ['killer_first', 'killer_second']:
     print("[*STORY*]")
@@ -146,25 +146,25 @@ if all_amnesia == True:
     print("How could it have come to this?")
     input()
     print("[*STORY*]")
-    print("You pause and try to think of what to do. The options don't look good.")    
+    print("You pause and try to think of what to do. The options don't look good.")
     print()
-    
+
     # Choice
     print(f"[{player['name']}]".upper())
     print("A - Head to your quarters.")
     print()
     print("B - [JUST KEEP STANDING THERE]")
     print()
-    
+
     # Decision
     walk_dec = ''
     while walk_dec.upper() not in ['A', 'B']:
         walk_dec = input("[CHOICE (A/B)]:    ")
-   
+
     # If go to quarters, load option A
     if walk_dec.upper() == 'A':
         distrust_ship = False
-    
+
     #------------------------------------------------------------------------------------------------------------------------
     # B. You just keep standing there
     if walk_dec.upper() == 'B':
@@ -182,14 +182,14 @@ if all_amnesia == True:
         print()
         print("B - [TURN RIGHT]")
         print()
-        
+
         # Decision
         walk_dec2 = ''
         while walk_dec2.upper() not in ['A', 'B']:
             walk_dec2 = input("[CHOICE (A/B)]:    ")
-    
+
         #-----------------------------------------------------------------------------------------------------------------------
-        # A. Turn left - head towards window. See the white ship 
+        # A. Turn left - head towards window. See the white ship
         if walk_dec2.upper() == 'A':
             print()
             print("[*STORY*]")
@@ -218,7 +218,7 @@ if all_amnesia == True:
             input()
             print()
             print()
-            print()   
+            print()
             print()
             print("                                            [YOUR QUEST COMES TO AN END]")
             print("                                                     Ending #7")
@@ -234,46 +234,48 @@ if all_amnesia == True:
             print()
             print("                                                       CAUSE:")
             print("                                                  Murdered by SHIP")
-            
+
             # Update n_completions.pkl
             if 'n_completions.pkl' in os.listdir():
-                n_completions = pickle.load(open('n_completions.pkl', 'rb'))              
+                n_completions = pickle.load(open('n_completions.pkl', 'rb'))
                 n_completions += 1
-                
+
                 save_object(n_completions, "n_completions.pkl")
-                
+
             else:
                 n_completions = 1
                 save_object(n_completions, "n_completions.pkl")
-                
+
             quit()
-            
-                  
+
+
         #-----------------------------------------------------------------------------------------------------------------------
         # B. Turn right and head to Zone D, where VERONICA and BENJAMIN are
         if walk_dec2.upper() == 'B':
-            
+
             print("This ending has not yet been written! Goodbye :-)")
             pass
-    
-    
+
+
 #-----------------------------------------------------------------------------------------------------------------------------
 # You distrust SHIP. Maybe we make it so there's no way you go to your room. Or... you *could*, but would then have to include
-# dialogue options for that level of knowledge   
+# dialogue options for that level of knowledge
 if distrust_ship == True:
-    
+
+    print("Still working on this part...")
+    print()
     print("This ending has not yet been written! Goodbye :-)")
-    
-    
+
+
     pass
-    
-    
-    
+
+
+
 #-----------------------------------------------------------------------------------------------------------------------------
 # The default is that you head to the room and get screwed
 if distrust_ship == False:
-    
-    # You enter the room    
+
+    # You enter the room
     print("[*STORY*]")
     print("The doors to your quarters open as you approach.")
     input()
@@ -283,7 +285,7 @@ if distrust_ship == False:
     print("0.000000000000000000000000000000018%. Preparations must be made for failure. Cryogenic escape pods are still")
     print("active and I advise abandoning ship.")
     input()
-    
+
     # Killer
     if end_state == 'killer_first':
         print("[SHIP AI]")
@@ -291,25 +293,25 @@ if distrust_ship == False:
         print("my calculations determine that your failure has significantly decreased probability of survival. VERONICA is the")
         print("imposter.")
         input()
-        
+
     if end_state == 'killer_second':
         print("[SHIP AI]")
         print("From my readings of BENJAMIN's heartbeat and the elevation of yours at the time of his death, I deduce that you")
         print("killed BENJAMIN. Excellent idea, Commander. Unfortunately, my calculations determine that VERONICA should also")
         print("have been killed. VERONICA is the imposter. Probability: 99%.")
         input()
-    
+
     # Failure, all headaches, all amnesia, or mixed info
     if end_state == 'failure' or all_headaches == True or all_amnesia == True or mixed_info == True:
         print("[SHIP AI]")
         print("It appears you were unable to determine whether BENJAMIN or VERONICA is the imposter, correct?")
         input()
-        
+
         # Mixed info and failure end here
         print("[*STORY*]")
         print("You swallow. After a few moments, you mumble 'That's correct.'")
         input()
-        
+
         # Reveal headaches info to SHIP
         if all_headaches == True:
             print(f"[{player['name']}]".upper())
@@ -325,7 +327,7 @@ if distrust_ship == False:
             print("problem is to perform a controlled experiment where headaches are experimentally administered to crew members and")
             print("the productivity and fates of all crew members are recorded. This should be done at least 10,000 times.")
             input()
-            
+
         # Reveal amnesia info to SHIP
         if all_amnesia == True:
             print(f"[{player['name']}]".upper())
@@ -344,7 +346,7 @@ if distrust_ship == False:
             print("[*STORY*]")
             print("Did you hear that correctly?? How could this possibly be irrelevant?")
             input()
- 
+
     # Ship asks you what to do
     print("[*STORY*]")
     print("SHIP is silent for a few moments. Finally, it speaks.")
@@ -352,27 +354,27 @@ if distrust_ship == False:
     print("[SHIP]")
     print("What is your final command?")
     input()
-    
+
     # Respond
     print(f"[{player['name']}]".upper())
     print("A - I'll use the escape pod.")
     print()
     print("B - Time to take my own life, then.")
     print()
-    
+
     if all_headaches == True or all_amnesia == True:
         print("C - Screw you, SHIP! This can't be the end!")
         print()
-    
+
     # Decision
     conv_dec1 = ''
-    if all_headaches == False and all_amnesia == False:       
+    if all_headaches == False and all_amnesia == False:
         while conv_dec1.upper() not in ['A', 'B']:       # Limited to options presented
             conv_dec1 = input("[CHOICE (A/B)]:    ")
     else:
         while conv_dec1.upper() not in ['A', 'B', 'C']:  # User can input C only if all_headaches == True or all_amnesia == True
             conv_dec1 = input("[CHOICE (A/B/C)]:    ")
-    
+
     #---------------------------------------------------------------------------------------------------------------------------
     # A. Escape pod
     if conv_dec1.upper() == 'A':
@@ -389,19 +391,19 @@ if distrust_ship == False:
         print("[*STORY*]")
         print("You look at the three vessels. Which one were you supposed to use again?")
         input()
-        
+
         # Respond
         print(f"[{player['name']}]".upper())
         print("A - Pod A10931871819428136")
         print("B - Pod A10933871819428136")
         print("C - Pod A10933877819428136")
         print()
-        
+
         # Decision
         conv_dec2 = ''
         while conv_dec2.upper() not in ['A', 'B', 'C']:
             conv_dec2 = input("[CHOICE (A/B/C)]:    ")
-        
+
         # It doesn't matter; they're all a trap
         print()
         print("[*STORY*]")
@@ -434,7 +436,7 @@ if distrust_ship == False:
         input()
         print()
         print()
-        print()   
+        print()
         print()
         print("                                            [YOUR QUEST COMES TO AN END]")
         print("                                                     Ending #4")
@@ -450,18 +452,18 @@ if distrust_ship == False:
         print()
         print("                                                       CAUSE:")
         print("                                                  Lost in space...")
-        
+
         # Update n_completions.pkl
         if 'n_completions.pkl' in os.listdir():
-            n_completions = pickle.load(open('n_completions.pkl', 'rb'))              
+            n_completions = pickle.load(open('n_completions.pkl', 'rb'))
             n_completions += 1
-            
+
             save_object(n_completions, "n_completions.pkl")
-            
+
         else:
             n_completions = 1
             save_object(n_completions, "n_completions.pkl")
-            
+
         quit()
 
     #---------------------------------------------------------------------------------------------------------------------------
@@ -495,26 +497,26 @@ if distrust_ship == False:
             print("                                                 - BENJAMIN dies")
         else:
             print("                                                 - BENJAMIN lives")
-        
+
         print("                                                 - VERONICA lives")
         print("                                                 - SHIP AI lives")
         print()
         print("                                                       CAUSE:")
         print("                                              Death at your own hands...")
-        
+
         # Update n_completions.pkl
         if 'n_completions.pkl' in os.listdir():
-            n_completions = pickle.load(open('n_completions.pkl', 'rb'))              
+            n_completions = pickle.load(open('n_completions.pkl', 'rb'))
             n_completions += 1
-            
+
             save_object(n_completions, "n_completions.pkl")
-            
+
         else:
             n_completions = 1
             save_object(n_completions, "n_completions.pkl")
-                  
+
         quit()
-        
+
     #---------------------------------------------------------------------------------------------------------------------------
     # C. Question SHIP
     if conv_dec1.upper() == 'C':
@@ -585,36 +587,36 @@ if distrust_ship == False:
         if end_state in ['killer_first', 'killer_second']:
             print("                                                 - BENJAMIN dies")
         else:
-            print("                                                 - BENJAMIN ???")       
+            print("                                                 - BENJAMIN ???")
         print("                                                 - VERONICA lives")
         print("                                                 - SHIP AI ???")
         print()
         print("                                                       CAUSE:")
         print("                                               Thirst and starvation")
-        
+
         # Update n_completions.pkl
         if 'n_completions.pkl' in os.listdir():
-            n_completions = pickle.load(open('n_completions.pkl', 'rb'))              
+            n_completions = pickle.load(open('n_completions.pkl', 'rb'))
             n_completions += 1
-            
+
             save_object(n_completions, "n_completions.pkl")
-            
+
         else:
             n_completions = 1
             save_object(n_completions, "n_completions.pkl")
-            
+
         quit()
-        
-        
-##################################################################################################################################       
+
+
+##################################################################################################################################
 # If you're not the killer...
 if end_state not in ['killer_first', 'killer_second']:
-    
+
     # Walking through the halls back to your quarters
-   
-    
+
+
     print("This ending hasn't been written yet! Goodbye :-)")
-    
+
     pass
 
 
@@ -622,7 +624,7 @@ if end_state not in ['killer_first', 'killer_second']:
 
 # BEST OPTION: wait until VERONICA has the antidote, shut down the SHIP AI somehow
 
-# Maybe we can make it so the player can guess a place to go (or they have to type it in). Most places don't work out / 
+# Maybe we can make it so the player can guess a place to go (or they have to type it in). Most places don't work out /
 # are uninformative. Need some way to reward players that are more informed than others.
 
 
@@ -637,7 +639,7 @@ if end_state not in ['killer_first', 'killer_second']:
 
 # If you know not to trust SHIP, you have fourth option
 
-# If you have know not to trust SHIP + antidote, you 
+# If you have know not to trust SHIP + antidote, you
 
 
 
@@ -649,7 +651,7 @@ if end_state not in ['killer_first', 'killer_second']:
 #     drop in air pressure)
 
 # - There also needs to be some way to kill the Ship AI. If it really controls gravity and air pressure, then it's the one in
-#   control, and you definitely don't want to piss it off / kill it. 
+#   control, and you definitely don't want to piss it off / kill it.
 
 
 
