@@ -42,11 +42,11 @@ time.sleep(1)
 
 print("\n" + "Commander.")
 
-time.sleep(3)
+time.sleep(2)
 
 print("\n" + "Commander, can you hear me?")
 
-time.sleep(2)
+time.sleep(1)
 
 #-----------------------------------------------------------------------------------
 player['name'] = ""
