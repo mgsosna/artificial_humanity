@@ -1,3 +1,12 @@
+Let's try adding in an image
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~mgsosna/1.embed"></iframe>
+
+<div>
+    <a href="https://plot.ly/~mgsosna/1/?share_key=v3T985mD3DdmMsyRDKzUgx" target="_blank" title="Plot 1" style="display: block; text-align: center;"><img src="https://plot.ly/~mgsosna/1.png?share_key=v3T985mD3DdmMsyRDKzUgx" alt="Plot 1" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="mgsosna:1" sharekey-plotly="v3T985mD3DdmMsyRDKzUgx" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
 # Artificial Humanity
 
 ## What is it?
